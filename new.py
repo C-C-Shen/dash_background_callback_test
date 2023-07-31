@@ -26,7 +26,6 @@ app.layout = html.Div(
     background=True,
     running=[
         (Output("button_id_1", "disabled"), True, False),
-        #(Output("cancel_button_id", "disabled", allow_duplicate=True), False, True),
     ],
     cancel=[Input("cancel_button_id", "n_clicks")],
 )
@@ -41,7 +40,6 @@ def update_clicks(n_clicks):
     background=True,
     running=[
         (Output("button_id_2", "disabled"), True, False),
-        #(Output("cancel_button_id", "disabled", allow_duplicate=True), False, True),
     ],
     cancel=[Input("cancel_button_id", "n_clicks")],
 )
